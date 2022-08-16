@@ -1,0 +1,39 @@
+{
+  "name": "cordova-plugin-firebase-crash",
+  "version": "2.2.0",
+  "description": "Cordova plugin for Firebase Crashlytics",
+  "cordova": {
+    "id": "cordova-plugin-firebase-crash",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/cordova-plugin-firebase-crash.git"
+  },
+  "author": "Maksim Chemerisuk <chemerisuk@gmail.com> (https://github.com/chemerisuk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chemerisuk/cordova-plugin-firebase-crash/issues"
+  },
+  "homepage": "https://github.com/chemerisuk/cordova-plugin-firebase-crash#readme",
+  "keywords": [
+    "cordova",
+    "firebase",
+    "crash",
+    "analytics",
+    "crashlytics",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "scripts": {
+    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "xcode": "2.0.0"
+  }
+}
