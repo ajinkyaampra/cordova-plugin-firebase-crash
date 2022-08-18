@@ -1,12 +1,12 @@
 buildscript {
     repositories {
         google()
-        jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.2'
-        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.3.0'
+        String gradlePluginFirebaseCrashlyticsClassPath = "com.google.firebase:firebase-crashlytics-gradle:2.9.1"
+        println "Adding classpath: ${gradlePluginFirebaseCrashlyticsClassPath}"
+        classpath gradlePluginFirebaseCrashlyticsClassPath
     }
 }
 
